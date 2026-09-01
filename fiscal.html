@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion Fiscale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <h2 class="mb-4 text-primary">💰 Gestion Fiscale</h2>
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-primary text-white">Ajouter un Paiement</div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-4 mb-3"><label>Numéro de Dossier</label><input type="text" class="form-control" required></div>
+                        <div class="col-md-4 mb-3"><label>Type de Taxe</label>
+                            <select class="form-select"><option>Taxe Professionnelle</option><option>Taxe d'Habitation</option><option>Taxe de Publicité</option></select>
+                        </div>
+                        <div class="col-md-4 mb-3"><label>Montant DH</label><input type="number" class="form-control" required></div>
+                    </div>
+                    <button class="btn btn-success">Enregistrer Paiement</button>
+                </form>
+            </div>
+        </div>
+        <div class="card shadow-sm">
+            <div class="card-header bg-secondary text-white">Liste des Paiements</div>
+            <div class="card-body">
+                <table class="table table-bordered"><thead class="table-dark"><tr><th>N° Dossier</th><th>Type</th><th>Montant</th><th>Date</th><th>Statut</th></tr></thead>
+                <tbody><tr><td>2026-001</td><td>Taxe Professionnelle</td><td>12000</td><td>2026-08-20</td><td><span class="badge bg-success">Payé</span></td></tr></tbody></table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
