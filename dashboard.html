@@ -1,76 +1,403 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        body { background: #f5f7fa; font-family: 'Segoe UI', sans-serif; }
-        .sidebar { width: 250px; background: #1e2a4a; min-height: 100vh; color: white; position: fixed; left: 0; top: 0; }
-        .sidebar-header { padding: 20px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #2e3a5a; font-weight: bold; }
-        .sidebar .nav-link { color: #a0aec0; padding: 12px 20px; display: flex; align-items: center; gap: 10px; text-decoration: none; }
-        .sidebar .nav-link:hover, .sidebar .nav-link.active { background: #2e3a5a; color: white; border-left: 3px solid #3b82f6; }
-        .main-content { margin-left: 250px; padding: 25px; }
-        .topbar { display: flex; justify-content: space-between; margin-bottom: 25px; align-items: center; }
-        .stat-card { padding: 20px; border-radius: 12px; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .stat-card h6 { font-size: 14px; opacity: 0.9; }
-        .stat-card h3 { font-size: 28px; font-weight: bold; margin: 0; }
-        .stat-card.blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
-        .stat-card.green { background: linear-gradient(135deg, #10b981, #059669); }
-        .stat-card.orange { background: linear-gradient(135deg, #f59e0b, #d97706); }
-        .stat-card.red { background: linear-gradient(135deg, #ef4444, #dc2626); }
-    </style>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Administration Municipale</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
 </head>
+
 <body>
-<div class="d-flex">
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <div class="sidebar-header"><i class="bi bi-building fs-4"></i><span>Administration Fiscale</span></div>
-        <ul class="nav flex-column mt-3">
-            <li><a class="nav-link active" href="dashboard.html"><i class="bi bi-grid"></i> Dashboard</a></li>
-            <li><a class="nav-link" href="fiscal.html"><i class="bi bi-cash-stack"></i> Gestion Fiscale</a></li>
-            <li><a class="nav-link" href="autorisations.html"><i class="bi bi-file-earmark-text"></i> Autorisations</a></li>
-            <li><a class="nav-link" href="dossiers.html"><i class="bi bi-folder2-open"></i> Dossiers</a></li>
-            <li><a class="nav-link" href="statistiques.html"><i class="bi bi-bar-chart"></i> Rapports</a></li>
-            <li><a class="nav-link" href="parametres.html"><i class="bi bi-gear"></i> Paramètres</a></li>
-        </ul>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="sidebar-logo">
+
+        <div style="font-size: 30px;">
+            🏛️
+        </div>
+
+        <h3>Administration</h3>
+
+        <small>Municipale</small>
+
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-        <div class="topbar">
-            <h4>Dashboard</h4>
-            <span>Admin <i class="bi bi-person-circle fs-4"></i></span>
+    <nav class="sidebar-menu">
+
+        <a href="dashboard.html" class="active">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="dossiers.html">
+            <i class="bi bi-folder"></i>
+            <span>Dossiers</span>
+        </a>
+
+        <a href="fiscal.html">
+            <i class="bi bi-cash-stack"></i>
+            <span>Gestion fiscale</span>
+        </a>
+
+        <a href="autorisations.html">
+            <i class="bi bi-file-earmark-check"></i>
+            <span>Autorisations</span>
+        </a>
+
+        <a href="statistiques.html">
+            <i class="bi bi-bar-chart"></i>
+            <span>Statistiques</span>
+        </a>
+
+        <a href="parametres.html">
+            <i class="bi bi-gear"></i>
+            <span>Paramètres</span>
+        </a>
+
+        <a href="index.html">
+            <i class="bi bi-box-arrow-right"></i>
+            <span>Déconnexion</span>
+        </a>
+
+    </nav>
+
+</aside>
+
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+    <header class="topbar">
+
+        <h1 class="page-title">
+            Dashboard
+        </h1>
+
+        <div class="user-info">
+
+            <span>
+                Administrateur
+            </span>
+
+            <div class="user-avatar">
+                A
+            </div>
+
         </div>
-        
-        <div class="row">
-            <div class="col-md-3 mb-3">
-                <div class="stat-card blue">
-                    <h6>Total Recettes</h6>
-                    <h3>1599,50 €</h3>
+
+    </header>
+
+
+    <section class="content">
+
+        <!-- STAT CARDS -->
+
+        <div class="row g-4 mb-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <div class="d-flex justify-content-between">
+
+                        <div>
+
+                            <div class="stat-card-title">
+                                Total des recettes
+                            </div>
+
+                            <div class="stat-card-value">
+                                1 559 900 DH
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card-icon">
+                            💰
+                        </div>
+
+                    </div>
+
+                    <small class="text-success">
+                        +12.5% ce mois
+                    </small>
+
                 </div>
+
             </div>
-            <div class="col-md-3 mb-3">
-                <div class="stat-card green">
-                    <h6>Nombre de dossiers</h6>
-                    <h3>23</h3>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <div class="d-flex justify-content-between">
+
+                        <div>
+
+                            <div class="stat-card-title">
+                                Nombre de dossiers
+                            </div>
+
+                            <div class="stat-card-value">
+                                2 430
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card-icon">
+                            📁
+                        </div>
+
+                    </div>
+
+                    <small class="text-muted">
+                        Dossiers enregistrés
+                    </small>
+
                 </div>
+
             </div>
-            <div class="col-md-3 mb-3">
-                <div class="stat-card orange">
-                    <h6>En cours</h6>
-                    <h3>13</h3>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <div class="d-flex justify-content-between">
+
+                        <div>
+
+                            <div class="stat-card-title">
+                                Autorisations
+                            </div>
+
+                            <div class="stat-card-value">
+                                413
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card-icon">
+                            📄
+                        </div>
+
+                    </div>
+
+                    <small class="text-success">
+                        328 acceptées
+                    </small>
+
                 </div>
+
             </div>
-            <div class="col-md-3 mb-3">
-                <div class="stat-card red">
-                    <h6>En retard</h6>
-                    <h3>9</h3>
+
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <div class="d-flex justify-content-between">
+
+                        <div>
+
+                            <div class="stat-card-title">
+                                Dossiers en attente
+                            </div>
+
+                            <div class="stat-card-value">
+                                29
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card-icon">
+                            ⏳
+                        </div>
+
+                    </div>
+
+                    <small class="text-warning">
+                        À traiter
+                    </small>
+
                 </div>
+
             </div>
+
         </div>
-    </div>
-</div>
+
+
+        <!-- CHARTS -->
+
+        <div class="row g-4 mb-4">
+
+            <div class="col-lg-8">
+
+                <div class="table-card">
+
+                    <h5>
+                        Évolution des recettes fiscales
+                    </h5>
+
+                    <canvas id="revenueChart"
+                            height="110">
+                    </canvas>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4">
+
+                <div class="table-card">
+
+                    <h5>
+                        État des paiements
+                    </h5>
+
+                    <canvas id="paymentChart">
+                    </canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RECENT ACTIVITIES -->
+
+        <div class="table-card">
+
+            <div class="d-flex justify-content-between">
+
+                <h5>
+                    Activités récentes
+                </h5>
+
+                <a href="dossiers.html"
+                   class="btn btn-primary-custom">
+                    Voir tout
+                </a>
+
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Dossier</th>
+
+                            <th>Type</th>
+
+                            <th>Agent</th>
+
+                            <th>Date</th>
+
+                            <th>Statut</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>#DOS-2026-001</td>
+
+                            <td>Autorisation</td>
+
+                            <td>Ahmed Alaoui</td>
+
+                            <td>01/09/2026</td>
+
+                            <td>
+                                <span class="badge-paid">
+                                    Accepté
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#DOS-2026-002</td>
+
+                            <td>Taxe professionnelle</td>
+
+                            <td>Fatima Zahra</td>
+
+                            <td>01/09/2026</td>
+
+                            <td>
+                                <span class="badge-pending">
+                                    En attente
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#DOS-2026-003</td>
+
+                            <td>Permis de construire</td>
+
+                            <td>Mohamed Amine</td>
+
+                            <td>31/08/2026</td>
+
+                            <td>
+                                <span class="badge-paid">
+                                    Accepté
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/dashboard.js"></script>
+
 </body>
+
 </html>
