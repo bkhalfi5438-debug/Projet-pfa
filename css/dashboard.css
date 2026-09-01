@@ -1,0 +1,40 @@
+/* Cards des statistiques */
+.card.text-bg-success, 
+.card.text-bg-primary, 
+.card.text-bg-warning, 
+.card.text-bg-info {
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.card h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.card h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+/* Zone du graphique */
+.card .card-body p {
+    text-align: center;
+    color: #6c757d;
+    padding: 40px;
+    background: #e9ecef;
+    border-radius: 8px;
+}
+
+/* Titres */
+h2.text-info, h2.text-primary, h2.text-success {
+    border-left: 4px solid;
+    padding-left: 12px;
+}
+
+h2.text-info { border-color: #17a2b8; }
+h2.text-primary { border-color: #007bff; }
+h2.text-success { border-color: #28a745; }

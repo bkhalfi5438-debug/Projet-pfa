@@ -1,0 +1,1 @@
+console.log("Plateforme Fiscale chargée avec succès");
