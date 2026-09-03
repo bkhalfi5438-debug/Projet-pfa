@@ -3,22 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Administration Municipale - Connexion</title>
 
-    <!-- Bootstrap -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- CSS du projet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -28,171 +20,99 @@
 
         <div class="login-card">
 
-            <!-- LOGO / IMAGE -->
             <div class="logo-container">
+                <div class="municipality-logo">
+                    🏛️
+                </div>
 
-                <img
-                    src="images/logo.png"
-                    alt="Logo Administration Municipale"
-                    class="municipal-logo">
+                <h2>Administration Municipale</h2>
 
-            </div>
-
-
-            <!-- TITRE -->
-            <div class="text-center mb-4">
-
-                <h1 class="login-title">
-                    Administration Municipale
-                </h1>
-
-                <p class="login-subtitle">
-                    Plateforme de Gestion et d'Analyse des Données
-                    Fiscales et des Autorisations
+                <p>
+                    Plateforme de Gestion et d'Analyse des Données Fiscales
+                    et des Autorisations
                 </p>
-
             </div>
 
-
-            <!-- FORMULAIRE -->
             <form id="loginForm">
 
-                <!-- IDENTIFIANT -->
                 <div class="mb-3">
-
-                    <label for="username" class="form-label">
+                    <label class="form-label">
                         Email professionnel / Identifiant
                     </label>
 
-                    <div class="input-group">
-
-                        <span class="input-group-text">
-                            <i class="bi bi-person"></i>
-                        </span>
-
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="username"
-                            name="username"
-                            placeholder="Entrez votre identifiant"
-                            required>
-
-                    </div>
-
+                    <input
+                        type="text"
+                        id="email"
+                        class="form-control"
+                        placeholder="Entrez votre identifiant"
+                        required>
                 </div>
 
-
-                <!-- MOT DE PASSE -->
                 <div class="mb-3">
 
-                    <label for="password" class="form-label">
+                    <label class="form-label">
                         Mot de passe
                     </label>
 
-                    <div class="input-group">
-
-                        <span class="input-group-text">
-                            <i class="bi bi-lock"></i>
-                        </span>
-
-                        <input
-                            type="password"
-                            class="form-control"
-                            id="password"
-                            name="password"
-                            placeholder="Entrez votre mot de passe"
-                            required>
-
-                        <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                            id="togglePassword">
-
-                            <i class="bi bi-eye" id="eyeIcon"></i>
-
-                        </button>
-
-                    </div>
+                    <input
+                        type="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="••••••••"
+                        required>
 
                 </div>
 
-
-                <!-- SE SOUVENIR -->
-                <div class="form-check mb-4">
+                <div class="form-check mb-3">
 
                     <input
                         class="form-check-input"
                         type="checkbox"
-                        id="rememberMe">
+                        id="remember">
 
-                    <label
-                        class="form-check-label"
-                        for="rememberMe">
-
+                    <label class="form-check-label">
                         Se souvenir de moi
-
                     </label>
 
                 </div>
 
-
-                <!-- BOUTON -->
                 <button
                     type="submit"
                     class="btn login-btn w-100">
-
-                    <i class="bi bi-box-arrow-in-right me-2"></i>
 
                     Se connecter
 
                 </button>
 
+                <div class="text-center mt-3">
 
-                <!-- MESSAGE D'ERREUR -->
-                <div
-                    id="loginMessage"
-                    class="alert alert-danger mt-3 d-none">
-
-                </div>
-
-
-                <!-- MOT DE PASSE OUBLIE -->
-                <div class="text-center mt-4">
-
-                    <a
-                        href="#"
-                        class="forgot-password">
-
+                    <a href="#" class="forgot-password">
                         Mot de passe oublié ?
-
                     </a>
 
                 </div>
 
             </form>
 
-
-            <!-- FOOTER -->
             <div class="login-footer">
-
-                <p>
-                    © 2026 Administration Municipale
-                </p>
-
                 <small>
-                    Plateforme de gestion municipale
+                    © 2026 Administration Municipale
                 </small>
-
             </div>
 
         </div>
 
     </div>
 
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
 
-    <!-- JavaScript -->
-    <script src="js/login.js"></script>
+            e.preventDefault();
+
+            window.location.href = "dashboard.html";
+
+        });
+    </script>
 
 </body>
 
