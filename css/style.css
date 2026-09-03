@@ -2,9 +2,9 @@
    VARIABLES & RESET
    ========================================================================== */
 :root {
-    --color-primary: #0f172a;        /* Bleu très foncé (Corporate) */
-    --color-secondary: #1e3a8a;      /* Bleu royal */
-    --color-accent: #2563eb;         /* Bleu accent (Boutons) */
+    --color-primary: #0f172a;        
+    --color-secondary: #1e3a8a;      
+    --color-accent: #2563eb;         
     
     --text-dark: #1e293b;
     --text-muted: #64748b;
@@ -26,7 +26,7 @@ body {
     background-color: #ffffff;
     color: var(--text-dark);
     height: 100vh;
-    overflow: hidden; /* لمنع التمرير (Scroll) في الشاشات الكبيرة */
+    overflow: hidden; 
 }
 
 /* ==========================================================================
@@ -53,7 +53,6 @@ body {
     overflow: hidden;
 }
 
-/* تأثير خفيف في الخلفية */
 .brand-overlay {
     position: absolute;
     top: -50%;
@@ -108,7 +107,7 @@ body {
 
 .feature-item i {
     font-size: 1.5rem;
-    color: #60a5fa; /* أزرق فاتح للأيقونات */
+    color: #60a5fa; 
 }
 
 .brand-footer {
@@ -129,7 +128,6 @@ body {
     position: relative;
 }
 
-/* Actions en haut à droite (Aide & Langue) */
 .top-actions {
     display: flex;
     justify-content: space-between;
@@ -154,7 +152,6 @@ body {
     font-weight: 700;
 }
 
-/* Conteneur centré du formulaire */
 .form-wrapper {
     margin: auto;
     width: 100%;
@@ -181,7 +178,6 @@ body {
     line-height: 1.5;
 }
 
-/* Styles des Inputs */
 .input-group-custom {
     margin-bottom: 1.5rem;
 }
@@ -264,7 +260,6 @@ body {
     color: var(--text-dark);
 }
 
-/* Options (Checkbox) */
 .form-options {
     margin-bottom: 2rem;
 }
@@ -286,7 +281,6 @@ body {
     cursor: pointer;
 }
 
-/* Bouton de connexion */
 .btn-primary-custom {
     width: 100%;
     padding: 0.875rem;
@@ -310,7 +304,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* Badge de sécurité */
 .security-badge {
     margin-top: 2rem;
     display: flex;
@@ -323,33 +316,18 @@ body {
 }
 
 .security-badge i {
-    color: #10b981; /* الأخضر للأمان */
+    color: #10b981; 
     font-size: 1rem;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (MOBILES & TABLETTES)
-   ========================================================================== */
+/* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
-    .auth-brand {
-        display: none; /* إخفاء الجانب الأيسر في الشاشات الصغيرة */
-    }
-    
-    .auth-form-container {
-        width: 100%;
-    }
-    
-    body {
-        overflow-y: auto; /* السماح بالتمرير في الهاتف */
-    }
+    .auth-brand { display: none; }
+    .auth-form-container { width: 100%; }
+    body { overflow-y: auto; }
 }
 
 @media (max-width: 480px) {
-    .top-actions {
-        padding: 1.5rem;
-    }
-    
-    .form-wrapper {
-        padding: 1.5rem;
-    }
+    .top-actions { padding: 1.5rem; }
+    .form-wrapper { padding: 1.5rem; }
 }
