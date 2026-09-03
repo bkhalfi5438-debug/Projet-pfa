@@ -8,37 +8,35 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Plateforme sécurisée de gestion et d'analyse des données fiscales et des autorisations municipales">
+          content="Plateforme de gestion et d'analyse des données fiscales et des autorisations municipales">
 
     <meta name="author"
           content="Administration Municipale">
 
-    <title>
-        Administration Municipale | Connexion
-    </title>
+    <title>Administration Municipale | Connexion</title>
 
 
-    <!-- =====================================================
+    <!-- ================================
          BOOTSTRAP
-    ====================================================== -->
+    ================================= -->
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
 
-    <!-- =====================================================
+    <!-- ================================
          BOOTSTRAP ICONS
-    ====================================================== -->
+    ================================= -->
 
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-    <!-- =====================================================
+    <!-- ================================
          GOOGLE FONT
-    ====================================================== -->
+    ================================= -->
 
     <link
         rel="preconnect"
@@ -54,9 +52,9 @@
         rel="stylesheet">
 
 
-    <!-- =====================================================
+    <!-- ================================
          CSS DU PROJET
-    ====================================================== -->
+    ================================= -->
 
     <link
         rel="stylesheet"
@@ -68,83 +66,145 @@
 <body class="login-body">
 
 
-    <!-- =====================================================
-         BACKGROUND DECORATION
-    ====================================================== -->
+    <!-- ================================
+         DECORATIONS BACKGROUND
+    ================================= -->
 
     <div class="background-decoration background-decoration-1"></div>
 
     <div class="background-decoration background-decoration-2"></div>
 
+    <div class="background-decoration background-decoration-3"></div>
 
-    <!-- =====================================================
-         PAGE DE CONNEXION
-    ====================================================== -->
+
+    <!-- DOTS GAUCHE -->
+
+    <div class="dots dots-left">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <!-- DOTS DROITE -->
+
+    <div class="dots dots-right">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <!-- ================================
+         PAGE PRINCIPALE
+    ================================= -->
 
     <main class="login-page">
 
 
-        <!-- =================================================
+        <!-- ================================
              LOGIN CONTAINER
-        ================================================== -->
+        ================================= -->
 
         <div class="login-container">
 
 
-            <!-- =============================================
+            <!-- ================================
                  LOGIN CARD
-            ============================================== -->
+            ================================= -->
 
             <section class="login-card">
 
 
-                <!-- =========================================
-                     HEADER / LOGO
-                ========================================== -->
+                <!-- ================================
+                     HEADER
+                ================================= -->
 
-                <div class="login-header">
+                <header class="login-header">
 
 
-                    <!-- Logo -->
+                    <!-- LOGO MUNICIPALITE -->
 
                     <div class="logo-container">
 
-                        <div class="logo-circle">
-
-                            <i class="bi bi-building-fill"></i>
-
-                        </div>
+                        <img
+                            src="images/logos-municipalite.jpg"
+                            alt="Logo de la Municipalité"
+                            class="municipal-logo">
 
                     </div>
 
 
-                    <!-- Titre -->
+                    <!-- TITRE -->
 
                     <h1 class="login-title">
-
                         Administration Municipale
-
                     </h1>
 
 
-                    <!-- Sous-titre -->
+                    <!-- SOUS-TITRE -->
 
                     <p class="login-subtitle">
 
-                        Plateforme de Gestion et d'Analyse
-                        des Données Fiscales et des Autorisations
+                        Plateforme de Gestion et d'Analyse des Données
+                        <br>
+                        Fiscales et des Autorisations
 
                     </p>
 
-                </div>
+                </header>
 
 
 
-                <!-- =========================================
+                <!-- ================================
                      SEPARATOR
-                ========================================== -->
+                ================================= -->
 
                 <div class="login-separator">
+
+                    <span></span>
+
+                    <div class="separator-dot"></div>
 
                     <span></span>
 
@@ -152,9 +212,9 @@
 
 
 
-                <!-- =========================================
+                <!-- ================================
                      FORMULAIRE
-                ========================================== -->
+                ================================= -->
 
                 <form
                     id="loginForm"
@@ -163,17 +223,16 @@
                     autocomplete="off">
 
 
-                    <!-- =====================================
+                    <!-- ============================
                          IDENTIFIANT
-                    ====================================== -->
+                    ============================= -->
 
-                    <div class="form-group mb-4">
+                    <div class="form-group">
+
 
                         <label
                             for="username"
                             class="form-label">
-
-                            <i class="bi bi-person-fill me-2"></i>
 
                             Email professionnel / Identifiant
 
@@ -182,13 +241,18 @@
 
                         <div class="input-wrapper">
 
-                            <i class="bi bi-person input-icon"></i>
+                            <div class="input-icon-box">
+
+                                <i class="bi bi-person"></i>
+
+                            </div>
+
 
                             <input
                                 type="text"
                                 id="username"
                                 name="username"
-                                class="form-control custom-input"
+                                class="custom-input"
                                 placeholder="Entrez votre identifiant"
                                 autocomplete="username"
                                 required>
@@ -199,17 +263,16 @@
 
 
 
-                    <!-- =====================================
+                    <!-- ============================
                          MOT DE PASSE
-                    ====================================== -->
+                    ============================= -->
 
-                    <div class="form-group mb-3">
+                    <div class="form-group password-group">
+
 
                         <label
                             for="password"
                             class="form-label">
-
-                            <i class="bi bi-lock-fill me-2"></i>
 
                             Mot de passe
 
@@ -218,20 +281,25 @@
 
                         <div class="input-wrapper">
 
-                            <i class="bi bi-lock input-icon"></i>
+
+                            <div class="input-icon-box">
+
+                                <i class="bi bi-lock"></i>
+
+                            </div>
 
 
                             <input
                                 type="password"
                                 id="password"
                                 name="password"
-                                class="form-control custom-input password-input"
+                                class="custom-input password-input"
                                 placeholder="Entrez votre mot de passe"
                                 autocomplete="current-password"
                                 required>
 
 
-                            <!-- Bouton afficher/cacher -->
+                            <!-- AFFICHER MOT DE PASSE -->
 
                             <button
                                 type="button"
@@ -246,32 +314,34 @@
 
                             </button>
 
+
                         </div>
 
                     </div>
 
 
 
-                    <!-- =====================================
+                    <!-- ============================
                          OPTIONS
-                    ====================================== -->
+                    ============================= -->
 
                     <div class="login-options">
 
 
-                        <!-- Se souvenir -->
+                        <!-- SE SOUVENIR -->
 
-                        <div class="form-check">
+                        <div class="remember-container">
 
                             <input
-                                class="form-check-input"
                                 type="checkbox"
                                 id="rememberMe"
-                                name="rememberMe">
+                                name="rememberMe"
+                                class="remember-checkbox">
+
 
                             <label
-                                class="form-check-label"
-                                for="rememberMe">
+                                for="rememberMe"
+                                class="remember-label">
 
                                 Se souvenir de moi
 
@@ -280,7 +350,7 @@
                         </div>
 
 
-                        <!-- Mot de passe oublié -->
+                        <!-- MOT DE PASSE OUBLIE -->
 
                         <a
                             href="#"
@@ -294,9 +364,9 @@
 
 
 
-                    <!-- =====================================
-                         MESSAGE D'ERREUR / SUCCÈS
-                    ====================================== -->
+                    <!-- ============================
+                         MESSAGE
+                    ============================= -->
 
                     <div
                         id="loginMessage"
@@ -307,28 +377,37 @@
 
 
 
-                    <!-- =====================================
+                    <!-- ============================
                          BOUTON CONNEXION
-                    ====================================== -->
+                    ============================= -->
 
                     <button
                         type="submit"
                         id="loginButton"
-                        class="btn login-btn">
+                        class="login-btn">
 
-                        <span class="login-btn-text">
 
-                            <i class="bi bi-box-arrow-in-right me-2"></i>
+                        <!-- ETAT NORMAL -->
+
+                        <span
+                            id="loginBtnText"
+                            class="login-btn-text">
+
+                            <i class="bi bi-box-arrow-in-right"></i>
 
                             Se connecter
 
                         </span>
 
+
+                        <!-- ETAT LOADING -->
+
                         <span
+                            id="loginLoading"
                             class="login-loading d-none">
 
                             <span
-                                class="spinner-border spinner-border-sm me-2"
+                                class="spinner-border spinner-border-sm"
                                 role="status"
                                 aria-hidden="true">
                             </span>
@@ -337,21 +416,29 @@
 
                         </span>
 
+
                     </button>
 
 
 
-                    <!-- =====================================
-                         SECURITY INFO
-                    ====================================== -->
+                    <!-- ============================
+                         SECURITE
+                    ============================= -->
 
                     <div class="security-info">
 
-                        <i class="bi bi-shield-lock-fill"></i>
+
+                        <div class="security-icon">
+
+                            <i class="bi bi-shield-lock-fill"></i>
+
+                        </div>
+
 
                         <span>
                             Connexion sécurisée
                         </span>
+
 
                     </div>
 
@@ -360,21 +447,28 @@
 
 
 
-                <!-- =========================================
-                     FOOTER CARD
-                ========================================== -->
+                <!-- ================================
+                     FOOTER
+                ================================= -->
 
-                <div class="login-footer">
+                <footer class="login-footer">
 
-                    <p>
+
+                    <p class="copyright">
+
                         © 2026 Administration Municipale
+
                     </p>
 
-                    <span>
-                        Plateforme interne de gestion municipale
-                    </span>
 
-                </div>
+                    <p class="footer-description">
+
+                        Plateforme de gestion municipale
+
+                    </p>
+
+
+                </footer>
 
 
             </section>
@@ -387,16 +481,14 @@
 
 
 
-    <!-- =====================================================
+    <!-- ================================
          JAVASCRIPT
-    ====================================================== -->
+    ================================= -->
 
-    <script
-        src="js/login.js">
-    </script>
+    <script src="js/login.js"></script>
 
 
-    <!-- Bootstrap JS -->
+    <!-- BOOTSTRAP JS -->
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
