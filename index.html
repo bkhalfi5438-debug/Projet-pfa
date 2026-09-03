@@ -1,134 +1,379 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portail Administratif | Ville & Commune</title>
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <title>Administration Municipale | Connexion</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-    <!-- Google Fonts (Inter & Plus Jakarta Sans for a premium look) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
 
-    <div class="auth-layout">
-        
-        <!-- ==========================================
-             SECTION IDENTITÉ VISUELLE (GAUCHE)
-        =========================================== -->
-        <div class="auth-brand">
-            <div class="brand-overlay"></div>
-            
-            <div class="brand-content">
-                <div class="brand-logo">
-                    <i class="bi bi-bank"></i>
-                </div>
-                
-                <h1 class="brand-title">Système de Gestion Municipale Intégré</h1>
-                <p class="brand-subtitle">
-                    Plateforme sécurisée dédiée aux fonctionnaires et administrateurs pour la gestion des affaires communales, fiscales et urbanistiques.
-                </p>
-                
-                <div class="brand-features">
-                    <div class="feature-item">
-                        <i class="bi bi-shield-check"></i>
-                        <span>Accès hautement sécurisé</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="bi bi-hdd-network"></i>
-                        <span>Données centralisées en temps réel</span>
-                    </div>
-                </div>
-            </div>
+<body class="login-body">
 
-            <div class="brand-footer">
-                <p>© 2026 Administration Municipale. Tous droits réservés.</p>
-            </div>
-        </div>
+    <!-- =========================
+         BACKGROUND DECORATIONS
+    ========================== -->
 
-        <!-- ==========================================
-             SECTION FORMULAIRE (DROITE)
-        =========================================== -->
-        <div class="auth-form-container">
-            
-            <!-- Language Switcher (Top Right) -->
-            <div class="top-actions">
-                <a href="#" class="help-link"><i class="bi bi-question-circle"></i> Centre d'aide</a>
-                <div class="lang-switcher">
-                    <span class="active">FR</span> | <a href="#">AR</a>
-                </div>
-            </div>
+    <div class="background-decoration background-decoration-1"></div>
+    <div class="background-decoration background-decoration-2"></div>
+    <div class="background-decoration background-decoration-3"></div>
 
-            <div class="form-wrapper">
-                
-                <div class="form-header">
-                    <h2>Authentification</h2>
-                    <p>Veuillez saisir vos identifiants professionnels pour accéder à votre espace de travail.</p>
-                </div>
+    <!-- Dots gauche -->
+    <div class="dots dots-left">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
 
-                <form id="loginForm" class="login-form">
-                    
-                    <!-- IDENTIFIANT -->
-                    <div class="input-group-custom">
-                        <label for="username">Identifiant ou Email</label>
-                        <div class="input-icon-wrapper">
-                            <i class="bi bi-person input-icon"></i>
-                            <input type="text" id="username" placeholder="prenom.nom@commune.ma" required autocomplete="username">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Dots droite -->
+    <div class="dots dots-right">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <!-- =========================
+         PAGE
+    ========================== -->
+
+    <main class="login-page">
+
+        <div class="login-container">
+
+            <!-- =========================
+                 LOGIN CARD
+            ========================== -->
+
+            <section class="login-card">
+
+
+                <!-- =====================
+                     HEADER
+                ====================== -->
+
+                <header class="login-header">
+
+                    <!-- Icône municipalité -->
+
+                    <div class="logo-container">
+
+                        <div class="municipal-icon">
+
+                            <i class="bi bi-bank2"></i>
+
                         </div>
+
                     </div>
+
+
+                    <!-- Titre -->
+
+                    <h1 class="login-title">
+                        Administration Municipale
+                    </h1>
+
+
+                    <!-- Description -->
+
+                    <p class="login-subtitle">
+                        Plateforme de Gestion et d'Analyse des Données
+                        <br>
+                        Fiscales et des Autorisations
+                    </p>
+
+                </header>
+
+
+                <!-- =====================
+                     SEPARATOR
+                ====================== -->
+
+                <div class="login-separator">
+
+                    <span></span>
+
+                    <div class="separator-dot"></div>
+
+                    <span></span>
+
+                </div>
+
+
+                <!-- =====================
+                     FORMULAIRE
+                ====================== -->
+
+                <form id="loginForm">
+
+
+                    <!-- IDENTIFIANT -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="username"
+                            class="form-label">
+
+                            Email professionnel / Identifiant
+
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <div class="input-icon-box">
+
+                                <i class="bi bi-person"></i>
+
+                            </div>
+
+
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                class="custom-input"
+                                placeholder="Entrez votre identifiant"
+                                autocomplete="username"
+                                required>
+
+                        </div>
+
+                    </div>
+
 
                     <!-- MOT DE PASSE -->
-                    <div class="input-group-custom">
-                        <div class="label-flex">
-                            <label for="password">Mot de passe</label>
-                            <a href="#" class="forgot-link">Mot de passe oublié ?</a>
-                        </div>
-                        <div class="input-icon-wrapper">
-                            <i class="bi bi-lock input-icon"></i>
-                            <input type="password" id="password" placeholder="••••••••" required autocomplete="current-password">
-                            <button type="button" class="btn-toggle-pass" aria-label="Afficher le mot de passe">
-                                <i class="bi bi-eye"></i>
-                            </button>
-                        </div>
-                    </div>
 
-                    <!-- OPTIONS -->
-                    <div class="form-options">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" id="remember">
-                            <span class="checkmark"></span>
-                            <span class="checkbox-label">Mémoriser cet appareil</span>
+                    <div class="form-group">
+
+                        <label
+                            for="password"
+                            class="form-label">
+
+                            Mot de passe
+
                         </label>
+
+
+                        <div class="input-wrapper">
+
+                            <div class="input-icon-box">
+
+                                <i class="bi bi-lock"></i>
+
+                            </div>
+
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="custom-input password-input"
+                                placeholder="Entrez votre mot de passe"
+                                autocomplete="current-password"
+                                required>
+
+
+                            <!-- Bouton afficher -->
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle">
+
+                                <i
+                                    class="bi bi-eye"
+                                    id="eyeIcon">
+                                </i>
+
+                            </button>
+
+                        </div>
+
                     </div>
 
-                    <!-- BOUTON -->
-                    <button type="submit" class="btn-primary-custom">
-                        <span>Se connecter à la plateforme</span>
-                        <i class="bi bi-arrow-right"></i>
+
+                    <!-- =====================
+                         OPTIONS
+                    ====================== -->
+
+                    <div class="login-options">
+
+
+                        <!-- Remember -->
+
+                        <div class="remember-container">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                                class="remember-checkbox">
+
+
+                            <label
+                                for="rememberMe"
+                                class="remember-label">
+
+                                Se souvenir de moi
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- Forgot -->
+
+                        <a
+                            href="#"
+                            class="forgot-password">
+
+                            Mot de passe oublié ?
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =====================
+                         BUTTON
+                    ====================== -->
+
+                    <button
+                        type="submit"
+                        class="login-btn"
+                        id="loginButton">
+
+                        <span id="loginBtnText">
+
+                            <i class="bi bi-box-arrow-in-right"></i>
+
+                            Se connecter
+
+                        </span>
+
+                        <span
+                            id="loginLoading"
+                            class="login-loading d-none">
+
+                            <span
+                                class="spinner-border spinner-border-sm">
+                            </span>
+
+                            Connexion...
+
+                        </span>
+
                     </button>
+
+
+                    <!-- =====================
+                         SECURITY
+                    ====================== -->
+
+                    <div class="security-info">
+
+                        <div class="security-icon">
+
+                            <i class="bi bi-shield-lock-fill"></i>
+
+                        </div>
+
+                        <span>
+                            Connexion sécurisée
+                        </span>
+
+                    </div>
+
 
                 </form>
 
-                <div class="security-badge">
-                    <i class="bi bi-lock-fill"></i>
-                    Connexion chiffrée de bout en bout (SSL/TLS)
-                </div>
 
-            </div>
+                <!-- =====================
+                     FOOTER
+                ====================== -->
+
+                <footer class="login-footer">
+
+                    <p class="copyright">
+                        © 2026 Administration Municipale
+                    </p>
+
+                    <p class="footer-description">
+                        Plateforme de gestion municipale
+                    </p>
+
+                </footer>
+
+
+            </section>
+
         </div>
 
-    </div>
+    </main>
 
-    <!-- Bootstrap JS (Optionnel si vous avez des dropdowns) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="./js/login.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
 </body>
+
 </html>
