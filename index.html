@@ -3,131 +3,80 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Plateforme de gestion et d'analyse des données fiscales et des autorisations municipales">
-
-    <meta name="author"
-          content="Administration Municipale">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Administration Municipale | Connexion</title>
 
-
-    <!-- ================================
-         BOOTSTRAP
-    ================================= -->
-
+    <!-- Bootstrap -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
-
-    <!-- ================================
-         BOOTSTRAP ICONS
-    ================================= -->
-
+    <!-- Bootstrap Icons -->
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-
-    <!-- ================================
-         GOOGLE FONT
-    ================================= -->
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
+    <!-- Google Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-
-    <!-- ================================
-         CSS DU PROJET
-    ================================= -->
-
-    <link
-        rel="stylesheet"
-        href="css/style.css">
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 
 <body class="login-body">
 
-
-    <!-- ================================
-         DECORATIONS BACKGROUND
-    ================================= -->
+    <!-- =========================
+         BACKGROUND DECORATIONS
+    ========================== -->
 
     <div class="background-decoration background-decoration-1"></div>
-
     <div class="background-decoration background-decoration-2"></div>
-
     <div class="background-decoration background-decoration-3"></div>
 
-
-    <!-- DOTS GAUCHE -->
-
+    <!-- Dots gauche -->
     <div class="dots dots-left">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
         <span></span>
 
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <span></span>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <span></span>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
     </div>
 
-
-    <!-- DOTS DROITE -->
-
+    <!-- Dots droite -->
     <div class="dots dots-right">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
+
+        <span></span>
+        <span></span>
+        <span></span>
         <span></span>
 
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <span></span>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <span></span>
         <span></span>
         <span></span>
         <span></span>
@@ -135,70 +84,61 @@
     </div>
 
 
-    <!-- ================================
-         PAGE PRINCIPALE
-    ================================= -->
+    <!-- =========================
+         PAGE
+    ========================== -->
 
     <main class="login-page">
 
-
-        <!-- ================================
-             LOGIN CONTAINER
-        ================================= -->
-
         <div class="login-container">
 
-
-            <!-- ================================
+            <!-- =========================
                  LOGIN CARD
-            ================================= -->
+            ========================== -->
 
             <section class="login-card">
 
 
-                <!-- ================================
+                <!-- =====================
                      HEADER
-                ================================= -->
+                ====================== -->
 
                 <header class="login-header">
 
-
-                    <!-- LOGO MUNICIPALITE -->
+                    <!-- Icône municipalité -->
 
                     <div class="logo-container">
 
-                        <img
-                            src="images/logos-municipalite.jpg"
-                            alt="Logo de la Municipalité"
-                            class="municipal-logo">
+                        <div class="municipal-icon">
+
+                            <i class="bi bi-bank2"></i>
+
+                        </div>
 
                     </div>
 
 
-                    <!-- TITRE -->
+                    <!-- Titre -->
 
                     <h1 class="login-title">
                         Administration Municipale
                     </h1>
 
 
-                    <!-- SOUS-TITRE -->
+                    <!-- Description -->
 
                     <p class="login-subtitle">
-
                         Plateforme de Gestion et d'Analyse des Données
                         <br>
                         Fiscales et des Autorisations
-
                     </p>
 
                 </header>
 
 
-
-                <!-- ================================
+                <!-- =====================
                      SEPARATOR
-                ================================= -->
+                ====================== -->
 
                 <div class="login-separator">
 
@@ -211,24 +151,16 @@
                 </div>
 
 
-
-                <!-- ================================
+                <!-- =====================
                      FORMULAIRE
-                ================================= -->
+                ====================== -->
 
-                <form
-                    id="loginForm"
-                    action="#"
-                    method="POST"
-                    autocomplete="off">
+                <form id="loginForm">
 
 
-                    <!-- ============================
-                         IDENTIFIANT
-                    ============================= -->
+                    <!-- IDENTIFIANT -->
 
                     <div class="form-group">
-
 
                         <label
                             for="username"
@@ -262,13 +194,9 @@
                     </div>
 
 
+                    <!-- MOT DE PASSE -->
 
-                    <!-- ============================
-                         MOT DE PASSE
-                    ============================= -->
-
-                    <div class="form-group password-group">
-
+                    <div class="form-group">
 
                         <label
                             for="password"
@@ -280,7 +208,6 @@
 
 
                         <div class="input-wrapper">
-
 
                             <div class="input-icon-box">
 
@@ -299,13 +226,12 @@
                                 required>
 
 
-                            <!-- AFFICHER MOT DE PASSE -->
+                            <!-- Bouton afficher -->
 
                             <button
                                 type="button"
                                 id="togglePassword"
-                                class="password-toggle"
-                                aria-label="Afficher le mot de passe">
+                                class="password-toggle">
 
                                 <i
                                     class="bi bi-eye"
@@ -314,28 +240,25 @@
 
                             </button>
 
-
                         </div>
 
                     </div>
 
 
-
-                    <!-- ============================
+                    <!-- =====================
                          OPTIONS
-                    ============================= -->
+                    ====================== -->
 
                     <div class="login-options">
 
 
-                        <!-- SE SOUVENIR -->
+                        <!-- Remember -->
 
                         <div class="remember-container">
 
                             <input
                                 type="checkbox"
                                 id="rememberMe"
-                                name="rememberMe"
                                 class="remember-checkbox">
 
 
@@ -350,7 +273,7 @@
                         </div>
 
 
-                        <!-- MOT DE PASSE OUBLIE -->
+                        <!-- Forgot -->
 
                         <a
                             href="#"
@@ -363,35 +286,16 @@
                     </div>
 
 
-
-                    <!-- ============================
-                         MESSAGE
-                    ============================= -->
-
-                    <div
-                        id="loginMessage"
-                        class="login-message d-none"
-                        role="alert">
-
-                    </div>
-
-
-
-                    <!-- ============================
-                         BOUTON CONNEXION
-                    ============================= -->
+                    <!-- =====================
+                         BUTTON
+                    ====================== -->
 
                     <button
                         type="submit"
-                        id="loginButton"
-                        class="login-btn">
+                        class="login-btn"
+                        id="loginButton">
 
-
-                        <!-- ETAT NORMAL -->
-
-                        <span
-                            id="loginBtnText"
-                            class="login-btn-text">
+                        <span id="loginBtnText">
 
                             <i class="bi bi-box-arrow-in-right"></i>
 
@@ -399,34 +303,26 @@
 
                         </span>
 
-
-                        <!-- ETAT LOADING -->
-
                         <span
                             id="loginLoading"
                             class="login-loading d-none">
 
                             <span
-                                class="spinner-border spinner-border-sm"
-                                role="status"
-                                aria-hidden="true">
+                                class="spinner-border spinner-border-sm">
                             </span>
 
                             Connexion...
 
                         </span>
 
-
                     </button>
 
 
-
-                    <!-- ============================
-                         SECURITE
-                    ============================= -->
+                    <!-- =====================
+                         SECURITY
+                    ====================== -->
 
                     <div class="security-info">
-
 
                         <div class="security-icon">
 
@@ -434,11 +330,9 @@
 
                         </div>
 
-
                         <span>
                             Connexion sécurisée
                         </span>
-
 
                     </div>
 
@@ -446,54 +340,39 @@
                 </form>
 
 
-
-                <!-- ================================
+                <!-- =====================
                      FOOTER
-                ================================= -->
+                ====================== -->
 
                 <footer class="login-footer">
 
-
                     <p class="copyright">
-
                         © 2026 Administration Municipale
-
                     </p>
-
 
                     <p class="footer-description">
-
                         Plateforme de gestion municipale
-
                     </p>
-
 
                 </footer>
 
 
             </section>
 
-
         </div>
-
 
     </main>
 
 
-
-    <!-- ================================
+    <!-- =========================
          JAVASCRIPT
-    ================================= -->
+    ========================== -->
 
-    <script src="js/login.js"></script>
-
-
-    <!-- BOOTSTRAP JS -->
+    <script src="./js/login.js"></script>
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
-
 
 </body>
 
