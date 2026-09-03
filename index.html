@@ -1,379 +1,591 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Administration Municipale | Connexion</title>
-
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!-- Google Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <title>ePermis - Plateforme des Permis de Construire</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 
-<body class="login-body">
+    <!-- ================================
+         NAVBAR
+    ================================= -->
 
-    <!-- =========================
-         BACKGROUND DECORATIONS
-    ========================== -->
+    <nav class="navbar">
 
-    <div class="background-decoration background-decoration-1"></div>
-    <div class="background-decoration background-decoration-2"></div>
-    <div class="background-decoration background-decoration-3"></div>
+        <div class="logo">
 
-    <!-- Dots gauche -->
-    <div class="dots dots-left">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+            <div class="logo-icon">
+                🏛️
+            </div>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+            <div>
+                <h2>ePermis</h2>
+                <span>Plateforme municipale</span>
+            </div>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        </div>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#accueil">Accueil</a>
+            </li>
 
-    <!-- Dots droite -->
-    <div class="dots dots-right">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+            <li>
+                <a href="#services">Services</a>
+            </li>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+            <li>
+                <a href="#securite">Sécurité</a>
+            </li>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+            <li>
+                <a href="#connexion">Connexion</a>
+            </li>
+        </ul>
 
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    </nav>
 
 
-    <!-- =========================
-         PAGE
-    ========================== -->
+    <!-- ================================
+         HERO
+    ================================= -->
 
-    <main class="login-page">
+    <section class="hero" id="accueil">
 
-        <div class="login-container">
+        <div class="hero-content">
 
-            <!-- =========================
-                 LOGIN CARD
-            ========================== -->
+            <div class="hero-badge">
+                🏛️ Service municipal numérique
+            </div>
 
-            <section class="login-card">
+            <h1>
+                Demandez votre
+                <span>permis de construire</span>
+                en ligne
+            </h1>
 
+            <p>
+                Une plateforme numérique simple, rapide et sécurisée
+                permettant aux citoyens de déposer et suivre leurs
+                demandes de permis de construire auprès de la municipalité.
+            </p>
 
-                <!-- =====================
-                     HEADER
-                ====================== -->
+            <div class="hero-buttons">
 
-                <header class="login-header">
+                <a href="#demande" class="btn btn-primary">
+                    Déposer une demande
+                </a>
 
-                    <!-- Icône municipalité -->
+                <a href="#services" class="btn btn-secondary">
+                    Découvrir les services
+                </a>
 
-                    <div class="logo-container">
+            </div>
 
-                        <div class="municipal-icon">
+        </div>
 
-                            <i class="bi bi-bank2"></i>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Titre -->
-
-                    <h1 class="login-title">
-                        Administration Municipale
-                    </h1>
-
-
-                    <!-- Description -->
-
-                    <p class="login-subtitle">
-                        Plateforme de Gestion et d'Analyse des Données
-                        <br>
-                        Fiscales et des Autorisations
-                    </p>
-
-                </header>
+    </section>
 
 
-                <!-- =====================
-                     SEPARATOR
-                ====================== -->
+    <!-- ================================
+         FEATURES
+    ================================= -->
 
-                <div class="login-separator">
+    <section class="features">
 
-                    <span></span>
+        <div class="section-title">
 
-                    <div class="separator-dot"></div>
+            <h2>Une plateforme moderne et sécurisée</h2>
 
-                    <span></span>
+            <p>
+                Facilitez vos démarches administratives grâce au numérique.
+            </p>
+
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📝
+                </div>
+
+                <h3>Dépôt en ligne</h3>
+
+                <p>
+                    Déposez votre demande de permis de construire
+                    directement en ligne sans avoir à vous déplacer.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🔒
+                </div>
+
+                <h3>Sécurité renforcée</h3>
+
+                <p>
+                    Les données des citoyens sont protégées grâce à
+                    des mécanismes de sécurité adaptés.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📊
+                </div>
+
+                <h3>Suivi des demandes</h3>
+
+                <p>
+                    Consultez à tout moment l'état d'avancement
+                    de votre demande de permis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         SERVICES
+    ================================= -->
+
+    <section class="services" id="services">
+
+        <div class="section-title">
+
+            <h2>Nos services</h2>
+
+            <p>
+                Toutes les fonctionnalités nécessaires pour vos démarches.
+            </p>
+
+        </div>
+
+
+        <div class="service-container">
+
+            <div class="service-card">
+
+                <h3>📄 Nouvelle demande</h3>
+
+                <p>
+                    Créez et envoyez une nouvelle demande de permis
+                    de construire en remplissant le formulaire en ligne.
+                </p>
+
+                <a href="#demande" class="btn btn-primary">
+                    Commencer
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>🔎 Suivre une demande</h3>
+
+                <p>
+                    Consultez le statut de votre demande grâce à
+                    votre numéro de dossier.
+                </p>
+
+                <a href="#suivi" class="btn btn-primary">
+                    Suivre
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>👤 Espace citoyen</h3>
+
+                <p>
+                    Accédez à votre espace personnel pour gérer
+                    vos demandes et vos informations.
+                </p>
+
+                <a href="#connexion" class="btn btn-primary">
+                    Se connecter
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         DEMANDE DE PERMIS
+    ================================= -->
+
+    <section class="request-section" id="demande">
+
+        <div class="request-container">
+
+            <div class="request-header">
+
+                <h2>Déposer une demande de permis</h2>
+
+                <p>
+                    Remplissez les informations ci-dessous pour commencer
+                    votre demande.
+                </p>
+
+            </div>
+
+
+            <form action="#" method="POST">
+
+                <div class="form-group">
+
+                    <label for="nom">
+                        Nom complet
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Ex : Mohamed Alami"
+                        required
+                    >
 
                 </div>
 
 
-                <!-- =====================
-                     FORMULAIRE
-                ====================== -->
+                <div class="form-group">
 
-                <form id="loginForm">
+                    <label for="email">
+                        Adresse e-mail
+                    </label>
 
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemple@email.com"
+                        required
+                    >
 
-                    <!-- IDENTIFIANT -->
+                </div>
 
-                    <div class="form-group">
 
-                        <label
-                            for="username"
-                            class="form-label">
+                <div class="form-group">
 
-                            Email professionnel / Identifiant
+                    <label for="telephone">
+                        Téléphone
+                    </label>
 
-                        </label>
+                    <input
+                        type="tel"
+                        id="telephone"
+                        name="telephone"
+                        placeholder="06 XX XX XX XX"
+                        required
+                    >
 
+                </div>
 
-                        <div class="input-wrapper">
 
-                            <div class="input-icon-box">
+                <div class="form-group">
 
-                                <i class="bi bi-person"></i>
+                    <label for="type">
+                        Type de demande
+                    </label>
 
-                            </div>
+                    <select id="type" name="type" required>
 
+                        <option value="">
+                            -- Sélectionner --
+                        </option>
 
-                            <input
-                                type="text"
-                                id="username"
-                                name="username"
-                                class="custom-input"
-                                placeholder="Entrez votre identifiant"
-                                autocomplete="username"
-                                required>
+                        <option value="construction">
+                            Permis de construire
+                        </option>
 
-                        </div>
+                        <option value="modification">
+                            Modification de construction
+                        </option>
 
-                    </div>
+                        <option value="extension">
+                            Extension
+                        </option>
 
+                        <option value="renovation">
+                            Rénovation
+                        </option>
 
-                    <!-- MOT DE PASSE -->
+                    </select>
 
-                    <div class="form-group">
+                </div>
 
-                        <label
-                            for="password"
-                            class="form-label">
 
-                            Mot de passe
+                <div class="form-group">
 
-                        </label>
+                    <label for="adresse">
+                        Adresse du projet
+                    </label>
 
+                    <input
+                        type="text"
+                        id="adresse"
+                        name="adresse"
+                        placeholder="Adresse du terrain"
+                        required
+                    >
 
-                        <div class="input-wrapper">
+                </div>
 
-                            <div class="input-icon-box">
 
-                                <i class="bi bi-lock"></i>
+                <div class="form-group">
 
-                            </div>
+                    <label for="description">
+                        Description du projet
+                    </label>
 
+                    <textarea
+                        id="description"
+                        name="description"
+                        placeholder="Décrivez votre projet..."
+                        required
+                    ></textarea>
 
-                            <input
-                                type="password"
-                                id="password"
-                                name="password"
-                                class="custom-input password-input"
-                                placeholder="Entrez votre mot de passe"
-                                autocomplete="current-password"
-                                required>
+                </div>
 
 
-                            <!-- Bouton afficher -->
+                <div class="form-group">
 
-                            <button
-                                type="button"
-                                id="togglePassword"
-                                class="password-toggle">
+                    <label for="document">
+                        Documents
+                    </label>
 
-                                <i
-                                    class="bi bi-eye"
-                                    id="eyeIcon">
-                                </i>
+                    <input
+                        type="file"
+                        id="document"
+                        name="document"
+                    >
 
-                            </button>
+                </div>
 
-                        </div>
 
-                    </div>
+                <button
+                    type="submit"
+                    class="btn btn-primary form-button"
+                >
+                    Envoyer la demande
+                </button>
 
-
-                    <!-- =====================
-                         OPTIONS
-                    ====================== -->
-
-                    <div class="login-options">
-
-
-                        <!-- Remember -->
-
-                        <div class="remember-container">
-
-                            <input
-                                type="checkbox"
-                                id="rememberMe"
-                                class="remember-checkbox">
-
-
-                            <label
-                                for="rememberMe"
-                                class="remember-label">
-
-                                Se souvenir de moi
-
-                            </label>
-
-                        </div>
-
-
-                        <!-- Forgot -->
-
-                        <a
-                            href="#"
-                            class="forgot-password">
-
-                            Mot de passe oublié ?
-
-                        </a>
-
-                    </div>
-
-
-                    <!-- =====================
-                         BUTTON
-                    ====================== -->
-
-                    <button
-                        type="submit"
-                        class="login-btn"
-                        id="loginButton">
-
-                        <span id="loginBtnText">
-
-                            <i class="bi bi-box-arrow-in-right"></i>
-
-                            Se connecter
-
-                        </span>
-
-                        <span
-                            id="loginLoading"
-                            class="login-loading d-none">
-
-                            <span
-                                class="spinner-border spinner-border-sm">
-                            </span>
-
-                            Connexion...
-
-                        </span>
-
-                    </button>
-
-
-                    <!-- =====================
-                         SECURITY
-                    ====================== -->
-
-                    <div class="security-info">
-
-                        <div class="security-icon">
-
-                            <i class="bi bi-shield-lock-fill"></i>
-
-                        </div>
-
-                        <span>
-                            Connexion sécurisée
-                        </span>
-
-                    </div>
-
-
-                </form>
-
-
-                <!-- =====================
-                     FOOTER
-                ====================== -->
-
-                <footer class="login-footer">
-
-                    <p class="copyright">
-                        © 2026 Administration Municipale
-                    </p>
-
-                    <p class="footer-description">
-                        Plateforme de gestion municipale
-                    </p>
-
-                </footer>
-
-
-            </section>
+            </form>
 
         </div>
 
-    </main>
+    </section>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
+    <!-- ================================
+         SUIVI
+    ================================= -->
 
-    <script src="./js/login.js"></script>
+    <section class="services" id="suivi">
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+        <div class="section-title">
+
+            <h2>Suivre votre demande</h2>
+
+            <p>
+                Entrez votre numéro de dossier pour consulter son statut.
+            </p>
+
+        </div>
+
+
+        <div class="login-box">
+
+            <div class="form-group">
+
+                <label for="numero">
+                    Numéro de dossier
+                </label>
+
+                <input
+                    type="text"
+                    id="numero"
+                    placeholder="Ex : PER-2026-0001"
+                >
+
+            </div>
+
+            <button class="btn btn-primary form-button">
+                Rechercher
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         SECURITY
+    ================================= -->
+
+    <section class="security" id="securite">
+
+        <div class="security-container">
+
+            <h2>🔐 Sécurité des données</h2>
+
+            <p>
+                La plateforme est conçue avec une approche orientée
+                cybersécurité afin de protéger les données des citoyens
+                et les informations administratives.
+            </p>
+
+
+            <div class="security-items">
+
+                <div class="security-item">
+
+                    <h3>🔒 HTTPS</h3>
+
+                    <p>
+                        Chiffrement des communications entre
+                        l'utilisateur et le serveur.
+                    </p>
+
+                </div>
+
+
+                <div class="security-item">
+
+                    <h3>🛡️ Protection SQL</h3>
+
+                    <p>
+                        Protection contre les injections SQL
+                        grâce à des requêtes sécurisées.
+                    </p>
+
+                </div>
+
+
+                <div class="security-item">
+
+                    <h3>👥 Gestion des rôles</h3>
+
+                    <p>
+                        Accès contrôlé selon le rôle de chaque
+                        utilisateur.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         LOGIN
+    ================================= -->
+
+    <section class="login-section" id="connexion">
+
+        <div class="login-box">
+
+            <h2>Connexion</h2>
+
+            <p>
+                Accédez à votre espace citoyen.
+            </p>
+
+
+            <form action="#" method="POST">
+
+                <div class="form-group">
+
+                    <label for="email-login">
+                        Adresse e-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email-login"
+                        name="email"
+                        placeholder="Votre adresse e-mail"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Votre mot de passe"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary form-button"
+                >
+                    Se connecter
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 ePermis — Plateforme numérique municipale.
+            Tous droits réservés.
+        </p>
+
+    </footer>
+
 
 </body>
-
 </html>
+```
