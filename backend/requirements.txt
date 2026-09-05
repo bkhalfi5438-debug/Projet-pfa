@@ -1,6 +1,0 @@
-Flask
-mysql-connector-python
-Flask-Login
-Flask-Bcrypt
-Flask-WTF
-python-dotenv
